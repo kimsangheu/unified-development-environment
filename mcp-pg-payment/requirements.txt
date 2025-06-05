@@ -1,0 +1,32 @@
+# MCP PG 결제 서비스 의존성 패키지들
+
+# MCP 서버 핵심 라이브러리
+mcp>=1.0.0
+
+# 데이터 검증 및 시리얼라이제이션
+pydantic>=2.0.0
+
+# HTTP 클라이언트 (동기)
+requests>=2.28.0
+
+# 비동기 HTTP 클라이언트
+aiohttp>=3.8.0
+
+# 암호화 및 보안
+cryptography>=3.4.8
+pycryptodome>=3.15.0
+
+# 환경변수 관리
+python-dotenv>=0.19.0
+
+# JSON 웹 토큰 (결제 인증용)
+PyJWT>=2.4.0
+
+# 날짜/시간 처리
+python-dateutil>=2.8.0
+
+# HTTP 서버 (개발/테스트용)
+uvicorn>=0.18.0
+
+# 로깅 및 구조화된 로그
+structlog>=22.1.0

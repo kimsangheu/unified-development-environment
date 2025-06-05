@@ -1,0 +1,45 @@
+{
+  "name": "kg-inicis-pg-integration",
+  "version": "1.0.0",
+  "description": "KG이니시스 PG연동 프로젝트 - Node.js + Express 기반 결제 시스템",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "init-git": "node init-git.js",
+    "dev": "node app.js",
+    "verify:step1": "node scripts/step1-syntax.js",
+    "verify": "npm run verify:step1",
+    "verify:quick": "powershell -ExecutionPolicy Bypass -File scripts/Quick-Check.ps1",
+    "verify:full": "powershell -ExecutionPolicy Bypass -File scripts/Verify-KGInicisAPI.ps1",
+    "verify:api": "powershell -ExecutionPolicy Bypass -File scripts/Test-KGInicisAPI.ps1",
+    "verify:payment": "powershell -ExecutionPolicy Bypass -File scripts/Test-Payment.ps1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pg",
+    "payment",
+    "inicis",
+    "nodejs",
+    "express"
+  ],
+  "author": "PG Development Team",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "로컬 저장소"
+  }
+}

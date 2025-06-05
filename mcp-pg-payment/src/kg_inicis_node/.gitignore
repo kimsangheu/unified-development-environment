@@ -1,0 +1,131 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Sensitive configuration files
+config/*.key
+config/*.pem
+config/*.p12
+*.key
+*.pem
+*.p12
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Build output
+dist/
+build/
+
+# Verification and log files
+verification-*.log
+test-results/
+scripts/logs/
+
+# === KG이니시스 결제 시스템 보안 강화 패턴 ===
+
+# 결제 관련 민감 정보
+secrets/
+auth/
+credentials/
+*.secret
+*.credential
+auth-config.json
+payment-config.json
+merchant-info.json
+
+# KG이니시스 특화 파일
+*.inicis
+inicis-*.json
+inicis-*.xml
+inicis-config.*
+signkey.*
+merchant-key.*
+
+# 결제 테스트 및 디버그 파일
+payment-test-*.log
+transaction-*.log
+api-response-*.json
+debug-payment-*.txt
+test-card-info.*
+
+# 백업 및 보안 파일
+*.backup
+*.bak
+*-backup.*
+security/
+private/
+confidential/
+
+# 인증서 및 키 파일 (추가 패턴)
+*.crt
+*.cer
+*.der
+*.pfx
+*.p7b
+*.p7c
+*.p7m
+*.p7s
+*.keystore
+*.jks
+
+# 결제 로그 및 거래 기록
+transactions/
+payment-logs/
+*-transaction-*.log
+*-payment-*.log
+billing-*.csv
+order-*.csv
+
+# 테스트 데이터 (민감 정보 포함 가능)
+test-data/
+sample-data/
+mock-data/
+*.test-data
+*.sample
+
+# 설정 오버라이드 파일
+local-config.*
+dev-config.*
+prod-config.*
+*-override.*
